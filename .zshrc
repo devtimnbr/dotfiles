@@ -58,6 +58,17 @@ alias docs="cd ~/Documents"
 alias ..="cd .."
 alias x="exit"
 
+# Tmux Aliases
+tmx() { tmux attach -t "$1" || tmux new -s "$1"; }          # Attach if session exists, else create it
+alias tn='tmux new -s'                                      # Start a new session
+alias ta='tmux attach -t'                                   # Attach to a session
+alias tls='tmux list-sessions'                              # List sessions
+alias tk='tmux kill-session -t'                             # Kill a session
+alias td='tmux detach'                                      # Detach from session
+alias tr='tmux rename-session -t $(tmux display-message -p "#S")' # Rename current session
+alias tl='tmux list-panes -s'                               # List all panes across all sessions
+alias tsw='tmux switch -t'                                  # Switch to specified window
+
 # Git Aliases
 alias gaa='git add --all'
 alias gcm='git commit -m'
