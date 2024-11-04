@@ -71,6 +71,7 @@ brew install docker
 brew install make
 brew install unzip
 brew install killport
+brew install tmux
 
 # Terminal tools
 echo "Installing Developer Tools..."
@@ -119,6 +120,7 @@ brew install --cask alfred
 brew install --cask raycast
 brew install --cask bitwarden
 brew install --cask yt-music
+brew install --cask numi
 
 # Install Mac App Store Apps
 echo "Installing Mac App Store Apps..."
